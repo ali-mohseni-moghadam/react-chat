@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 // firebase
 import { auth } from "../firebase";
 
-const AuthContext = createContext();
+export const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
