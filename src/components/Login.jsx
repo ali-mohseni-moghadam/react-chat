@@ -15,7 +15,10 @@ const Login = () => {
     <div className={styles.loginPage}>
       <div className={styles.loginCard}>
         <h2>Welcome to ReactGram!</h2>
-        <div className={styles.button}>
+        <div
+          className={styles.button}
+          onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
+        >
           <img src={google} alt="" /> Sign in with Google
         </div>
       </div>
